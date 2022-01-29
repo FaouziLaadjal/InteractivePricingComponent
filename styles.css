@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  padding-top: 30px;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+#main .row1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#main .row1 h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #262f4c;
+}
+#main .row1 p {
+  padding-top: 20px;
+  color: #a1a8ba;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#main .row2 .row {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.container-wrapper {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.check {
+  padding-top: 5px;
+  width: 10px;
+}
+.trial {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 42px;
+
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.trial:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.trial:active {
+  position: relative;
+  top: 1px;
+}
+
+.rw {
+  display: grid;
+  grid-template-columns: 15px auto;
+  align-items: center;
+  gap: 5px;
+}
+.rw p {
+  color: #979ba5;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.row3 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.row3 .column2 {
+  align-self: center;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:hover {
+  cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  background-color: #8084e5;
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.btn-switch {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 120px 100px 120px 120px;
+  align-items: center;
+}
+
+#main .row2 .row .column2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#main .row2 .row .column2 #slideValue {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#main .row2 .row .column2 .firstspan {
+  color: black;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.month,
+.year {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+.random {
+  display: none;
+}
+.secondspan {
+  color: #8084e5;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn-switch span {
+  color: #8084e5;
+  font-weight: bold;
+}
+.dis {
+  padding-left: 10px;
+  color: red;
+  font-weight: 600;
+}
+.slidecontainer {
+  padding-bottom: 50px;
+}
+.sliderr {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.sliderr::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.sliderr::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+.sliderr::-moz-range-progress {
+  -webkit-appearance: none;
+  background-color: #04aa6d;
+}
+@media screen and (max-width: 830px) {
+  #main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+}
