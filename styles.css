@@ -203,12 +203,49 @@ input:checked + .slider:before {
     padding: 0;
     display: inline-block;
   }
+  #main .row1 h1{
+    font-size: 2rem;
+  }
+  #main .row1 p{
+    font-size: 1rem;
+  }
+  #main .row2 .row .column1{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  }
+  #main .row2 .row .column1 p{
+    font-size: 1rem;
+  }
+  .secondspan{
+    font-size: 1rem;
+  }
+  #main .row2 .row .column2{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  margin: 0;
+  }
+  #main .row2 .row .column2 .firstspan{
+    font-size: 2rem;
+  }
   .btn-switch{
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 2px;
     margin-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
-  
+  .row3{
+    display: inline-block;
+  }
+  .column1{
+    margin-bottom: 30px;
+  }
+  .column2{
+    text-align: center;
+  }
   
 
   
